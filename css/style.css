@@ -61,11 +61,54 @@ html, body {
 
     background-color: var(--background-sidebar);
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 #sideBar nav #img img {
-    width: 100%;
+    padding: 5%;
+
+    width: 46%;
     height: auto;
+
+}
+
+#sideBar nav #img h1 {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    font-size: 50px;
+    font-weight: 400;
+
+    color: var(--button-light-brown);
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+}
+
+#sideBar nav #img h2 {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    font-family: 'Montserrat', sans-serif;
+
+    color: var(--button-light-brown);
+
+    text-align: center;
+
+    text-transform: uppercase;
 
 }
 
