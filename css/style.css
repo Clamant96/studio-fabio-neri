@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html, body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Playfair Display', serif;
+
+    background-color: var(--background-home);
+
+}
+
+:root {
+    --background-home: #f9f9f9;
+    --background-header: #222227;
+    --background-sidebar: #191919;
+
+    --button-light-brown: #9e8a78;
+
+    --text-white: #fbfbfb;
+    --text-black: #222222;
+    --text-gray: #999999;
+
+    --box-shadow: #000000;
+
+    --hr: #c1c1c1;
+
+}
+
+/*SIDEBAR*/
+#sideBar {
+    position: fixed;
+
+    width: 20%;
+    height: 100vh;
+
+    margin-left: -22%;
+
+    background-color: var(--background-sidebar);
+
+    box-shadow: 0px 0px 5px -2px var(--box-shadow);
+
+    transition: margin-left, .5s;
+
+}
+
+#sideBar nav {
+    width: 100%;
+    height: auto;
+
+}
+
+#sideBar nav #img {
+    width: 100%;
+    height: auto;
+
+    background-color: var(--background-sidebar);
+
+}
+
+#sideBar nav #img img {
+    width: 100%;
+    height: auto;
+
+}
+
+#sideBar nav ul {
+    width: 100%;
+    height: auto;
+
+    list-style: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#sideBar nav ul a {
+    text-decoration: none;
+
+}
+
+#sideBar nav ul a li {
+    padding: 5%;
+    margin: 1%;
+
+    width: 88%;
+    height: auto;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: var(--button-light-brown);
+
+    transition: background-color, color, .5s;
+
+}
+
+#sideBar nav ul a li:hover {
+    background-color: var(--button-light-brown);
+
+    color: var(--text-white);
+
+}
+
+/*CONTAINER*/
+#container {
+    width: 100%;
+    height: auto;
+
+    /* background-color: antiquewhite; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/*HEADER*/
+#container #header {
+    width: 100%;
+    height: auto;
+
+    background-color: var(--background-header);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container #header #itensHeader {
+    padding: 1%;
+
+    width: 58%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*ICON - MENU*/
+#container #header #itensHeader #menu {
+    padding: 1%;
+
+    width: 18%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    cursor: pointer;
+
+}
+
+#container #header #itensHeader #menu img {
+    padding: 6%;
+
+    width: 12%;
+    height: auto;
+
+    background-color: var(--background-sidebar);
+
+    border-radius: 5px;
+
+}
+
+/*ICON - FRANQUIA*/
+#container #header #itensHeader #franquia {
+    width: 60%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container #header #itensHeader #franquia img {
+    width: 20%;
+    height: auto;
+
+}
+
+/*ICON - CONTATOS*/
+#container #header #itensHeader #contatosIcons {
+    padding: 1%;
+
+    width: 18%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* background-color: blue; */
+
+}
+
+#container #header #itensHeader #contatosIcons img {
+    width: 20%;
+    height: auto;
+
+    color: azure;
+
+}
+
+#container hr {
+    width: 68%;
+    height: auto;
+
+    border-top: 2px solid var(--hr);
+    border-left: 0px solid var(--background-header);
+    border-right: 0px solid var(--background-header);
+    border-bottom: 0px solid var(--background-header);
+
+}
+
+/*SECTION*/
+#container #section {
+    padding: 1%;
+
+    width: 58%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: blueviolet; */
+
+}
+
+/*TRABALHOS*/
+#container #section #trabalhos {
+    padding: 3%;
+
+    width: 54%;
+    height: auto;
+
+    text-align: center;
+
+    /* background-color: cadetblue; */
+
+}
+
+#container #section #trabalhos h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    color: var(--text-gray);
+
+    text-transform: uppercase;
+
+}
+
+#container #section #trabalhos h2 {
+    font-size: 40px;
+    font-weight: 600;
+
+    color: var(--text-black);
+
+}
+
+#container #section #imgsTrabalhos {
+    padding: 1%;
+
+    width: 38%;
+    height: auto;
+
+}
+
+#container #section #imgsTrabalhos img {
+    width: 100%;
+    height: auto;
+
+}
+
+/*GALERIA*/
+#container #section #galeria {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    /* background-color: yellowgreen; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#container #section #galeria h1 {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: var(--text-black);
+
+    text-transform: uppercase;
+
+}
+
+#container #section #galeria #imgGaleria {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    /* background-color: violet; */
+
+}
+
+#container #section #galeria #imgGaleria img {
+    flex: 1; 
+
+    padding: 0.2%;
+
+    width: 19.8%;
+    height: auto;
+
+}
+
+/*FOOTER*/
+#container #footer {
+    width: 100%;
+    height: auto;
+
+    background-color: var(--background-sidebar);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container #footer #banner {
+    width: 70%;
+    height: 50vh;
+
+    background-image: url(../img/NewBarber_banner.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 110%;
+
+}
+
+#container #footer #banner img {
+    width: 100%;
+    height: auto;
+
+}
+
+#container #footer #contatosBanner {
+    padding: 2%;
+
+    width: 26%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#container #footer #contatosBanner #titulo {
+    padding: 1%;
+    margin-bottom: 5%;
+
+    width: 98%;
+    height: auto;
+
+    color: var(--text-white);
+
+    text-transform: uppercase;
+
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+#container #footer #contatosBanner ul {
+    width: 100%;
+    height: auto;
+
+    list-style: none;
+
+}
+
+#container #footer #contatosBanner ul li {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    color: var(--text-white);
+
+}
+
+#container #footer #contatosBanner p {
+    padding: 1%;
+    margin-top: 10%;
+
+    width: 98%;
+    height: auto;
+
+    color: var(--text-white);
+
+    font-size: 16px;
+    font-weight: 400;
+
+}
