@@ -33,6 +33,11 @@ html, body {
 
 }
 
+::-webkit-scrollbar {
+    display: none;
+    
+}
+
 /*SIDEBAR*/
 #sideBar {
     position: fixed;
@@ -232,6 +237,10 @@ html, body {
     width: 20%;
     height: auto;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #container #header #itensHeader #franquia a img {
@@ -262,6 +271,10 @@ html, body {
     color: azure;
 
     text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -732,15 +745,192 @@ html, body {
 
 }
 
+/*SECTION - CONTEUDO*/
+#container #sectionConteudo {
+    width: 100%;
+    height: auto;
+
+    /* background-color: #999999; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#container #sectionConteudo h1 {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+#container #sectionConteudo #servicos {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container #sectionConteudo #servicos #microblading {
+    padding: 1%;
+
+    width: 48%;
+    height: auto;
+
+    /* background-color: #c1c1c1; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container #sectionConteudo #servicos #microblading #texto {
+    padding: 1%;
+
+    width: 63%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#container #sectionConteudo #servicos #microblading #texto p {
+    padding: 1% 0% 0% 0%;
+    margin-top: 2%;
+
+    width: 94%;
+    height: auto;
+
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+
+    color: var(--text-black);
+
+}
+
+#container #sectionConteudo #servicos #microblading #img {
+    padding: 1%;
+
+    width: 33%;
+    height: auto;
+
+}
+
+#container #sectionConteudo #servicos #microblading #img img {
+    width: 100%;
+    height: auto;
+
+    box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+    border-radius: 10px;
+
+}
+
+#container #sectionConteudo #servicos hr {
+    width: 0%;
+    height: 30vh;
+
+    border-left: 2px solid var(--background-header);
+    border-top: 0px solid var(--background-header);
+    border-right: 0px solid var(--background-header);
+    border-bottom: 0px solid var(--background-header);
+
+}
+
+#container #sectionConteudo #servicos #descricao {
+    padding: 1%;
+
+    width: 48%;
+    height: auto;
+
+    /* background-color: antiquewhite; */
+
+}
+
+#container #sectionConteudo #servicos #descricao ul {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    /* background-color: darkgreen; */
+
+}
+
+#container #sectionConteudo #servicos #descricao ul li {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    /* background-color: darkgoldenrod; */
+
+    text-decoration: none;
+
+}
+
+#container #sectionConteudo #servicos #descricao ul li #titulo {
+    width: 100%;
+    height: auto;
+
+    /* background-color: aqua; */
+
+    text-align: left;
+
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#container #sectionConteudo #servicos #descricao ul li p {
+    width: 100%;
+    height: auto;
+
+    /* background-color: darkcyan; */
+
+    text-align: left;
+
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 @media(min-width: 768px) and (max-width: 1023px){
     /*SIDEBAR*/
     #sideBar {
         position: fixed;
 
-        width: 20%;
+        width: 30%;
         height: 100vh;
 
-        margin-left: -22%;
+        margin-left: -32%;
 
         background-color: var(--background-sidebar);
 
@@ -783,7 +973,7 @@ html, body {
         width: 98%;
         height: auto;
 
-        font-size: 25px;
+        font-size: 45px;
         font-weight: 400;
 
         color: var(--button-light-brown);
@@ -800,7 +990,7 @@ html, body {
         width: 98%;
         height: auto;
 
-        font-size: 8px;
+        font-size: 14px;
         font-weight: 400;
 
         font-family: 'Montserrat', sans-serif;
@@ -835,7 +1025,7 @@ html, body {
         width: 88%;
         height: auto;
 
-        font-size: 8px;
+        font-size: 14px;
         font-weight: 600;
 
         color: var(--button-light-brown);
@@ -894,7 +1084,7 @@ html, body {
     #container #header #itensHeader #menu {
         padding: 1%;
 
-        width: 18%;
+        width: 25%;
         height: auto;
 
         display: flex;
@@ -908,7 +1098,7 @@ html, body {
     #container #header #itensHeader #menu img {
         padding: 6%;
 
-        width: 20%;
+        width: 14%;
         height: auto;
 
         background-color: var(--background-sidebar);
@@ -919,7 +1109,7 @@ html, body {
 
     /*ICON - FRANQUIA*/
     #container #header #itensHeader #franquia {
-        width: 60%;
+        width: 20%;
         height: auto;
 
         display: flex;
@@ -929,8 +1119,12 @@ html, body {
     }
 
     #container #header #itensHeader #franquia a {
-        width: 40%;
+        width: 100%;
         height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -944,7 +1138,7 @@ html, body {
     #container #header #itensHeader #contatosIcons {
         padding: 1%;
 
-        width: 15%;
+        width: 25%;
         height: auto;
 
         display: flex;
@@ -956,17 +1150,27 @@ html, body {
     }
 
     #container #header #itensHeader #contatosIcons a {
-        width: 40%;
+        padding: 2%;
+
+        width: 22%;
         height: auto;
 
         color: azure;
 
         text-decoration: none;
 
+        background-color: var(--background-sidebar);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 10px;
+
     }
 
     #container #header #itensHeader #contatosIcons a img {
-        padding: 5%;
+        padding: 10%;
 
         width: 80%;
         height: auto;
@@ -1188,7 +1392,7 @@ html, body {
 
     #container #sectionLocalidade #localidade iframe {
         width: 100%;
-        height: 40vh;
+        height: 50vh;
 
     }
 
@@ -1351,7 +1555,7 @@ html, body {
 
     #container #footer #banner {
         width: 70%;
-        height: 30vh;
+        height: 40vh;
 
         background-image: url(../img/NewBarber_banner.jpg);
         background-position: top left;
@@ -1431,6 +1635,186 @@ html, body {
         font-weight: 400;
 
     }
+
+    /*SECTION - CONTEUDO*/
+    #container #sectionConteudo {
+        width: 100%;
+        height: auto;
+
+        /* background-color: #999999; */
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo h1 {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+
+    #container #sectionConteudo #servicos {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: #c1c1c1; */
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #texto {
+        padding: 1%;
+
+        width: 63%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #texto p {
+        padding: 1% 0% 0% 0%;
+        margin-top: 2%;
+
+        width: 94%;
+        height: auto;
+
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+
+        color: var(--text-black);
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #img {
+        padding: 1%;
+
+        width: 33%;
+        height: auto;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #img img {
+        width: 100%;
+        height: auto;
+
+        box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+        border-radius: 10px;
+
+    }
+
+    #container #sectionConteudo #servicos hr {
+        display: none;
+
+        width: 0%;
+        height: 30vh;
+
+        border-left: 2px solid var(--background-header);
+        border-top: 0px solid var(--background-header);
+        border-right: 0px solid var(--background-header);
+        border-bottom: 0px solid var(--background-header);
+
+    }
+
+    #container #sectionConteudo #servicos #descricao {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: antiquewhite; */
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: darkgreen; */
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        /* background-color: darkgoldenrod; */
+
+        text-decoration: none;
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li #titulo {
+        width: 100%;
+        height: auto;
+
+        /* background-color: aqua; */
+
+        text-align: left;
+
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li p {
+        width: 100%;
+        height: auto;
+
+        /* background-color: darkcyan; */
+
+        text-align: left;
+
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+
+    }
 }
 
 @media(min-width: 361px) and (max-width: 767px){
@@ -1484,7 +1868,7 @@ html, body {
         width: 98%;
         height: auto;
 
-        font-size: 18px;
+        font-size: 38px;
         font-weight: 400;
 
         color: var(--button-light-brown);
@@ -1501,7 +1885,7 @@ html, body {
         width: 98%;
         height: auto;
 
-        font-size: 6px;
+        font-size: 12px;
         font-weight: 400;
 
         font-family: 'Montserrat', sans-serif;
@@ -1536,7 +1920,7 @@ html, body {
         width: 88%;
         height: auto;
 
-        font-size: 8px;
+        font-size: 12px;
         font-weight: 600;
 
         color: var(--button-light-brown);
@@ -1582,7 +1966,7 @@ html, body {
     #container #header #itensHeader {
         padding: 1%;
 
-        width: 58%;
+        width: 78%;
         height: auto;
 
         display: flex;
@@ -1595,7 +1979,7 @@ html, body {
     #container #header #itensHeader #menu {
         padding: 1%;
 
-        width: 18%;
+        width: 28%;
         height: auto;
 
         display: flex;
@@ -1609,22 +1993,20 @@ html, body {
     }
 
     #container #header #itensHeader #menu img {
-        padding: 1%;
+        padding: 3%;
 
-        width: 28%;
+        width: 14%;
         height: auto;
 
         background-color: var(--background-sidebar);
 
-        border-radius: 0px;
-
-        z-index: 1;
+        border-radius: 5px;
 
     }
 
     /*ICON - FRANQUIA*/
     #container #header #itensHeader #franquia {
-        width: 60%;
+        width: 20%;
         height: auto;
 
         display: flex;
@@ -1634,8 +2016,12 @@ html, body {
     }
 
     #container #header #itensHeader #franquia a {
-        width: 50%;
+        width: 100%;
         height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -1649,24 +2035,31 @@ html, body {
     #container #header #itensHeader #contatosIcons {
         padding: 1%;
 
-        width: 18%;
+        width: 28%;
         height: auto;
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         /* background-color: blue; */
 
     }
 
     #container #header #itensHeader #contatosIcons a {
-        width: 30%;
+        padding: 2%;
+        margin: 1%;
+
+        width: 14%;
         height: auto;
 
         color: azure;
 
         text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -1894,7 +2287,7 @@ html, body {
 
     #container #sectionLocalidade #localidade iframe {
         width: 100%;
-        height: 30vh;
+        height: 50vh;
 
     }
 
@@ -2058,7 +2451,7 @@ html, body {
 
     #container #footer #banner {
         width: 100%;
-        height: 25vh;
+        height: 35vh;
 
         background-image: url(../img/NewBarber_banner.jpg);
         background-position: top left;
@@ -2085,6 +2478,8 @@ html, body {
         justify-content: center;
 
         font-family: 'Montserrat', sans-serif;
+
+        text-align: center;
 
     }
 
@@ -2138,6 +2533,186 @@ html, body {
         font-weight: 400;
 
     }
+
+    /*SECTION - CONTEUDO*/
+    #container #sectionConteudo {
+        width: 100%;
+        height: auto;
+
+        /* background-color: #999999; */
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo h1 {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+
+    #container #sectionConteudo #servicos {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: #c1c1c1; */
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #texto {
+        padding: 1%;
+
+        width: 63%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #texto p {
+        padding: 1% 0% 0% 0%;
+        margin-top: 2%;
+
+        width: 94%;
+        height: auto;
+
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+
+        color: var(--text-black);
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #img {
+        padding: 1%;
+
+        width: 33%;
+        height: auto;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #img img {
+        width: 100%;
+        height: auto;
+
+        box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+        border-radius: 10px;
+
+    }
+
+    #container #sectionConteudo #servicos hr {
+        display: none;
+
+        width: 0%;
+        height: 30vh;
+
+        border-left: 2px solid var(--background-header);
+        border-top: 0px solid var(--background-header);
+        border-right: 0px solid var(--background-header);
+        border-bottom: 0px solid var(--background-header);
+
+    }
+
+    #container #sectionConteudo #servicos #descricao {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: antiquewhite; */
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: darkgreen; */
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        /* background-color: darkgoldenrod; */
+
+        text-decoration: none;
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li #titulo {
+        width: 100%;
+        height: auto;
+
+        /* background-color: aqua; */
+
+        text-align: left;
+
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li p {
+        width: 100%;
+        height: auto;
+
+        /* background-color: darkcyan; */
+
+        text-align: left;
+
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+
+    }
 }
 
 @media(max-width: 360px){
@@ -2145,10 +2720,10 @@ html, body {
     #sideBar {
         position: fixed;
 
-        width: 30%;
+        width: 35%;
         height: 100vh;
 
-        margin-left: -32%;
+        margin-left: -37%;
 
         background-color: var(--background-sidebar);
 
@@ -2191,7 +2766,7 @@ html, body {
         width: 98%;
         height: auto;
 
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
 
         color: var(--button-light-brown);
@@ -2208,7 +2783,7 @@ html, body {
         width: 98%;
         height: auto;
 
-        font-size: 6px;
+        font-size: 7px;
         font-weight: 400;
 
         font-family: 'Montserrat', sans-serif;
@@ -2243,7 +2818,7 @@ html, body {
         width: 88%;
         height: auto;
 
-        font-size: 8px;
+        font-size: 7px;
         font-weight: 600;
 
         color: var(--button-light-brown);
@@ -2257,7 +2832,7 @@ html, body {
 
         color: var(--text-white);
 
-    }
+    }   
 
     /*CONTAINER*/
     #container {
@@ -2289,7 +2864,7 @@ html, body {
     #container #header #itensHeader {
         padding: 1%;
 
-        width: 58%;
+        width: 88%;
         height: auto;
 
         display: flex;
@@ -2302,7 +2877,7 @@ html, body {
     #container #header #itensHeader #menu {
         padding: 1%;
 
-        width: 18%;
+        width: 28%;
         height: auto;
 
         display: flex;
@@ -2318,20 +2893,18 @@ html, body {
     #container #header #itensHeader #menu img {
         padding: 1%;
 
-        width: 28%;
+        width: 14%;
         height: auto;
 
         background-color: var(--background-sidebar);
 
         border-radius: 0px;
 
-        z-index: 1;
-
     }
 
     /*ICON - FRANQUIA*/
     #container #header #itensHeader #franquia {
-        width: 60%;
+        width: 20%;
         height: auto;
 
         display: flex;
@@ -2341,8 +2914,12 @@ html, body {
     }
 
     #container #header #itensHeader #franquia a {
-        width: 50%;
+        width: 100%;
         height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -2356,7 +2933,7 @@ html, body {
     #container #header #itensHeader #contatosIcons {
         padding: 1%;
 
-        width: 18%;
+        width: 28%;
         height: auto;
 
         display: flex;
@@ -2368,19 +2945,23 @@ html, body {
     }
 
     #container #header #itensHeader #contatosIcons a {
-        width: 30%;
+        width: 20%;
         height: auto;
 
         color: azure;
 
         text-decoration: none;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     #container #header #itensHeader #contatosIcons a img {
-        padding: 0%;
+        padding: 1%;
 
-        width: 100%;
+        width: 98%;
         height: auto;
 
         color: azure;
@@ -2765,7 +3346,7 @@ html, body {
 
     #container #footer #banner {
         width: 100%;
-        height: 25vh;
+        height: 20vh;
 
         background-image: url(../img/NewBarber_banner.jpg);
         background-position: top left;
@@ -2792,6 +3373,8 @@ html, body {
         justify-content: center;
 
         font-family: 'Montserrat', sans-serif;
+
+        text-align: center;
 
     }
 
@@ -2843,6 +3426,187 @@ html, body {
 
         font-size: 14px;
         font-weight: 400;
+
+    }
+
+    /*SECTION - CONTEUDO*/
+    #container #sectionConteudo {
+        width: 100%;
+        height: auto;
+
+        /* background-color: #999999; */
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo h1 {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+
+    #container #sectionConteudo #servicos {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: #c1c1c1; */
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #texto {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #texto p {
+        padding: 1% 0% 0% 0%;
+        margin-top: 2%;
+
+        width: 94%;
+        height: auto;
+
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+
+        color: var(--text-black);
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #img {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+    }
+
+    #container #sectionConteudo #servicos #microblading #img img {
+        width: 100%;
+        height: auto;
+
+        box-shadow: 0px 3px 5px -5px var(--box-shadow);
+
+        border-radius: 10px;
+
+    }
+
+    #container #sectionConteudo #servicos hr {
+        display: none;
+
+        width: 0%;
+        height: 30vh;
+
+        border-left: 2px solid var(--background-header);
+        border-top: 0px solid var(--background-header);
+        border-right: 0px solid var(--background-header);
+        border-bottom: 0px solid var(--background-header);
+
+    }
+
+    #container #sectionConteudo #servicos #descricao {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: antiquewhite; */
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        /* background-color: darkgreen; */
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li {
+        padding: 1%;
+
+        width: 98%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        /* background-color: darkgoldenrod; */
+
+        text-decoration: none;
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li #titulo {
+        width: 100%;
+        height: auto;
+
+        /* background-color: aqua; */
+
+        text-align: left;
+
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    #container #sectionConteudo #servicos #descricao ul li p {
+        width: 100%;
+        height: auto;
+
+        /* background-color: darkcyan; */
+
+        text-align: left;
+
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
 
     }
 }
